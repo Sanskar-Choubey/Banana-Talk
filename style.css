@@ -1,17 +1,28 @@
+*{
+    margin: 2rem;
+}
+
+body{
+    background-color: turquoise;
+}
+
 .input-field{
-    display: inline;
-    margin: 2rem 2rem;
+    max-width: 600px;
+    margin: auto;
+    display: block;
     padding: 2rem;
     border: 1px solid red;
     width: 90%;
     background-color:whitesmoke;
 }
+/* button section */
 
 .btn{
+    max-width: 300px;
     display: block;
-    margin: 2rem;
+    margin: auto;
     padding:1rem 2rem;
-    background-color:white;
+    background-color:whitesmoke;
     color: red;
     font-weight: bold;
     font-size: 1rem;
@@ -20,4 +31,15 @@
 .btn:hover{
     background:white;
     color: blue;
+}
+
+/* output field */
+
+.output-field{
+    border: 1px solid black;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background-color: whitesmoke;
 }

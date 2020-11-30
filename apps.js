@@ -1,7 +1,8 @@
-// exercise 2 done
-// taking input from the user
+var btnTranslate = document.querySelector(".btn");
+var inputField = document.querySelector(".input-field");
 
-var input = prompt ("Please enter your name");
-console.log(input);
+btnTranslate.addEventListener("click", function btnEventHandler(){
+    console.log("Clicked");
+    console.log(inputField.value);
+})
 
-alert("Name Recoreded");

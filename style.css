@@ -1,0 +1,23 @@
+.input-field{
+    display: inline;
+    margin: 2rem 2rem;
+    padding: 2rem;
+    border: 1px solid red;
+    width: 90%;
+    background-color:whitesmoke;
+}
+
+.btn{
+    display: block;
+    margin: 2rem;
+    padding:1rem 2rem;
+    background-color:white;
+    color: red;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn:hover{
+    background:white;
+    color: blue;
+}

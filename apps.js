@@ -9,14 +9,20 @@ var url = "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
 var text = inputField.value;
 
 function urlGenerator(text) {
-       return url + "?" + "text="+ inputField.value;
-       console.log(generatedUrl);
+        return url + "?" + "text=" + inputField.value;
+        console.log(generatedUrl);
 }
 
-function fetchURL(){
-        fetch(urlGenerator()).then(response => response.json()).then(JSON => console.log(JSON));
+function errorHandler(error) {
+        console.log("Some error occured",error);
+        alert("The server is down!Sorry for the inconvience");
+}
+
+function fetchURL() {
+        fetch(urlGenerator()).then(response => response.json()).then(JSON => console.log(JSON.contents.translated)).catch(errorHandler())
 }
 
 btnTranslate.addEventListener("click", function btnEventHandler() {
-       console.log(fetchURL());
+        console.log(fetchURL());     
 })
+

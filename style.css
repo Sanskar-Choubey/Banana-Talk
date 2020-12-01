@@ -11,6 +11,8 @@ html {
     --background: #FCD34D;
 }
 
+/* Divison of content and image as div element */
+
 .whole-content{
     float: bottom;
     padding-bottom: 1rem;
@@ -46,6 +48,7 @@ html {
 
 
 /* input-text */
+
 .input-field {
     max-width: 600px;
     margin: auto;
